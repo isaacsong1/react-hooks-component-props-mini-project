@@ -3,7 +3,7 @@ import React from 'react'
 const About = (props) => {
     return (
         <aside>
-            <img src={props ? (props.image) : ('https://via.placeholder.com/215')} alt={"blog logo"}/>
+            <img src={props.image ? (props.image) : ('https://via.placeholder.com/215')} alt={"blog logo"}/>
             <p>{props.about}</p>
         </aside>
     )
