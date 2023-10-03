@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Article from "./article/Article";
 
-const ArticleList = () => {
+const ArticleList = (props) => {
     return (
-        <div>ArticleList</div>
+        <main>
+            { props.posts.map(post => 
+                {
+                    <Article key={post.id} title={post.title} date={post.date} preview={post.preview} minutes={post.minutes}/> 
+                }
+            )}
+        </main>
     )
 }
 
