@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Article = (props) => {
+const Article = ({title, date='January 1, 1970', preview}) => {
     return (
         <article>
-            <h3>{props.title}</h3>
-            <small>{props.date ? (props.date) : ('Janurary 1, 1970')}</small>
-            <p>{props.preview}</p>
+            <h3>{title}</h3>
+            <small>{date}</small>
+            <p>{preview}</p>
         </article>
     )
 }
